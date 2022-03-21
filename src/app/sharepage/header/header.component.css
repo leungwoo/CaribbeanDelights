@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav .nav-link {
+  color: var(--secondar-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+.banner {
+  background-image: url("/assets/images/caribbeandelight.jpeg");
+  height: 800px;
+  background-position: center bottom;
+  background-size: cover;
+}
+.banner h1 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  top: 50%;
+  left: 5%;
+}
