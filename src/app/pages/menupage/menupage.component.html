@@ -1,1 +1,20 @@
-<p>menupage works!</p>
+<!-- card feature for showcasing chossen dish -->
+<div class="card" style="width: 30rem">
+  <div *ngIf="dish">
+    <img
+      src="{{ dish?.foodImg }}"
+      class="card-img-top"
+      alt="{{ dish?.foodName }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ dish?.foodName }}</h5>
+      <p class="card-text">
+        {{ dish?.foodDetails }}
+      </p>
+      <p>{{ dish?.foodPrice | currency }}</p>
+      <a class="backbutton" (click)="goBack()"
+        ><i class="bi bi-arrow-left"></i> Back to Menu</a
+      >
+    </div>
+  </div>
+</div>

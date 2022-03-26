@@ -10,3 +10,6 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+.highlight {
+  border: 2px solid var(--primary-color);
+}
