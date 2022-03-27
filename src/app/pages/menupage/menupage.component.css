@@ -1,12 +1,39 @@
 .card {
   margin-left: 5%;
 }
-
-.backbutton {
-  background-color: var(--primary-color);
+img {
+  object-fit: cover;
+}
+.btn {
+  margin-left: 5%;
+  background-color: black;
   text-decoration: none;
-  color: black;
-  padding: 10px 10px;
+  color: white;
+  padding: 5px 5px;
   border-radius: 5px;
   cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: var(--primary-color);
+}
+
+.buybtn {
+  background-color: Black;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buybtn:hover {
+  background-color: black;
+  color: var(--primary-color);
+}
+
+form {
+  width: 60%;
+}
+form h2 {
+  margin-bottom: 30%;
 }

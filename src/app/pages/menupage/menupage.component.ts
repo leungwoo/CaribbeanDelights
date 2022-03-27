@@ -21,8 +21,4 @@ export class MenupageComponent implements OnInit {
     this.dish = this.orderdetailsservice.getDish(id);
     console.log(this.dish);
   }
-  //back method to return to menu page using location class
-  goBack(): void {
-    this.location.back();
-  }
 }

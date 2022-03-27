@@ -1,20 +1,52 @@
 <!-- card feature for showcasing chossen dish -->
-<div class="card" style="width: 30rem">
-  <div *ngIf="dish">
-    <img
-      src="{{ dish?.foodImg }}"
-      class="card-img-top"
-      alt="{{ dish?.foodName }}"
-    />
-    <div class="card-body">
-      <h5 class="card-title">{{ dish?.foodName }}</h5>
-      <p class="card-text">
-        {{ dish?.foodDetails }}
-      </p>
-      <p>{{ dish?.foodPrice | currency }}</p>
-      <a class="backbutton" (click)="goBack()"
-        ><i class="bi bi-arrow-left"></i> Back to Menu</a
-      >
+<div>
+  <a class="btn mt-3" routerLink="/menu"
+    ><i class="bi bi-arrow-left"></i> Back</a
+  >
+</div>
+<div class="container-fluid mt-2">
+  <div class="row">
+    <div class="card" style="width: 35rem">
+      <div *ngIf="dish">
+        <img
+          src="{{ dish?.foodImg }}"
+          class="card-img-top"
+          alt="{{ dish?.foodName }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ dish?.foodName | uppercase }}</h5>
+          <p class="card-text">
+            {{ dish?.foodDetails }}
+          </p>
+          <p>{{ dish?.foodPrice | currency }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <form>
+        <h2>Enter Your Details</h2>
+
+        <input
+          type="text"
+          placeholder="Enter Your Full Name"
+          class="form-control mb-2"
+        />
+
+        <input
+          type="text"
+          placeholder="Enter Your Mobile"
+          class="form-control mb-2"
+        />
+
+        <input
+          type="text-area"
+          placeholder="Enter Your Address"
+          class="form-control mb-3"
+        />
+
+        <a class="buybtn"><i class="bi bi-cart"></i> Add to Cart</a>
+      </form>
     </div>
   </div>
 </div>

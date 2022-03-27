@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { expand, flyInOut } from 'src/app/animations/animation';
+import { flyInOut } from 'src/app/animations/animation';
 import { OrderdetailsService } from 'src/app/services/orderdetails.service';
 
 @Component({
